@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Y6 Footprints and Locks</title>
+<title>Y6 Footprints and Locks Homework</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -386,28 +386,6 @@ table.prev td:first-child{font-weight:700;width:40%;color:var(--muted)}
 .research{border-left:6px solid var(--blue)}.research .do{background:var(--blue)}
 .tfb button,.abcd button,.oddg button{touch-action:manipulation}
 @media (max-width:760px){.bins{grid-template-columns:1fr!important}.abcd,.matchg,.tfb,.hot{grid-template-columns:1fr}.oddg{grid-template-columns:1fr 1fr}.big{font-size:21px}.hud{font-size:15px}}
-
-.trail{display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 16px}
-.trail div{flex:1;min-width:120px;background:#fff;border:2px solid var(--line);border-radius:18px;padding:14px 10px;text-align:center;font-weight:700;font-size:18px;position:relative}
-.trail div span{display:block;font-size:48px;line-height:1.1}
-.trail div:not(:last-child)::after{content:"👣";position:absolute;right:-16px;top:40%;font-size:18px}
-.doors{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-.door{background:#fff;border:3px solid var(--line);border-radius:20px;padding:16px;text-align:center}
-.door.two2{border-color:var(--ok);background:#f2fbf5}
-.door .dl{font-size:70px;line-height:1}.door b{display:block;font-size:24px;color:var(--maroon);margin:6px 0}.door p{margin:0;font-size:19px}
-.steps3{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
-.steps3 span{background:#fff;border:2px solid var(--line);border-radius:999px;padding:3px 14px;font-weight:700;font-size:16px;color:var(--muted)}
-.steps3 span.on{background:var(--maroon);border-color:var(--maroon);color:#fff}
-.doorbig{display:flex;align-items:center;gap:14px;background:#fff;border:2px solid var(--line);border-radius:20px;padding:14px 18px;margin-bottom:10px}
-.doorbig .dd{font-size:80px;line-height:1;margin-left:auto}
-.lk{font-size:52px;line-height:1;text-align:center;background:#fdecea;border:3px solid var(--bad);border-radius:16px;padding:8px 10px;min-width:96px}
-.lk small{display:block;font-size:14px;font-weight:700;color:var(--muted);margin-top:4px}
-.lk.open{background:#e9f7ef;border-color:var(--ok)}
-.tnote{display:none}
-body.teacher .tnote{display:flex;flex-direction:column;gap:3px;background:#fffdf7;border:2px solid #e8c35a;border-radius:14px;padding:10px 14px;margin-bottom:14px;font-size:17px;max-width:980px}
-.tnote b{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#7a5a00}
-.tnote i{font-style:normal;font-weight:700;color:var(--maroon);margin-right:6px}
-@media (max-width:760px){.phone{max-width:230px}.screen{min-height:280px}.doors{grid-template-columns:1fr}.trail div{min-width:42%}.trail div::after{display:none}.doorbig .dd{font-size:56px}.lk{font-size:38px;min-width:76px}}
 </style>
 </head>
 <body>
@@ -422,15 +400,15 @@ body.teacher .tnote{display:flex;flex-direction:column;gap:3px;background:#fffdf
 <div class="wrap" style="display:block">
 <main id="screens">
 <section data-part="Start">
-  <span class="lv">Year 6 · Lesson</span>
+  <span class="lv">Year 6 homework · not a test</span>
   <h2>Footprints and Locks 👣🔐</h2>
-  <p class="lead">Today you will learn how to keep your online life safe. Play each level to earn up to <b>3 ⭐</b>.</p><div class="card" style="max-width:760px;margin-bottom:14px"><p style="margin:0 0 6px;font-weight:700;color:var(--maroon)">Today I can:</p><ol class="steps"><li>explain what a <b>digital footprint</b> is 👣</li><li>explain why a deleted post can still be out there 📸</li><li>explain how <b>two locks (MFA)</b> keep my account safe 🔐</li></ol></div>
+  <p class="lead">9 quick levels about footprints and locks. Earn up to <b>3 ⭐</b> per level. Replay to beat your score!</p>
   <div class="card" style="max-width:760px">
     <div class="two" style="gap:12px">
       <div><label class="f" for="nm" style="margin-top:0">Your name</label><input class="txt" id="nm" autocomplete="name"></div>
       <div><label class="f" for="cls" style="margin-top:0">Your class</label><input class="txt" id="cls" placeholder="e.g. 6A"></div>
     </div>
-    <p class="muted" style="margin:10px 0 0;font-size:16px">Your stars save on this device. At the end, you get a badge!</p>
+    <p class="muted" style="margin:10px 0 0;font-size:16px">Your stars save on this device. At the end, collect your badge and send it to your teacher.</p>
   </div>
   <div class="map" id="map"></div>
 </section>
@@ -445,16 +423,14 @@ body.teacher .tnote{display:flex;flex-direction:column;gap:3px;background:#fffdf
       </div>
     </div>
     <div>
-      <div class="card"><p style="margin:0 0 8px;font-weight:700;color:var(--maroon);font-size:22px">Remember 🧠</p>
-        <ol class="steps" style="font-size:21px"><li>👣 Everything you do online leaves a footprint.</li><li>📸 Deleting your post does not delete the copies.</li><li>🔐 Two locks are better than one. Never share your code.</li></ol></div>
-      <div style="display:none"><div class="card" style="border:2px solid var(--maroon)">
+      <div class="card" style="border:2px solid var(--maroon)">
         <button class="btn" id="sendBtn" style="font-size:22px;padding:14px 26px">Send to my teacher</button>
         <div id="sendMsg" style="margin-top:10px"></div><p class="muted" id="lastSent" style="font-size:16px"></p>
         <p style="margin:10px 0 6px;font-size:17px">Not working? Use one of these and hand it in where your teacher asks.</p>
         <div class="row"><button class="btn alt sm" id="copyBtn">Copy my results</button><button class="btn alt sm" id="downBtn">Download</button></div>
       </div>
       <details style="margin-top:12px"><summary style="cursor:pointer;font-weight:700">See what will be sent</summary><table class="prev" id="prevTable" style="margin-top:8px"></table></details>
-    </div></div>
+    </div>
   </div>
 </section>
 </main>
@@ -465,63 +441,11 @@ body.teacher .tnote{display:flex;flex-direction:column;gap:3px;background:#fffdf
   <button class="btn" id="next">Next →</button>
 </div></div>
 <script>
-const SHEET_URL = "";
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbwUrLnXjM_bDseaTCzHlZ_U-plyEvTrtwLpZF8KSN8JcE7ukzz4FXTJPXxul6LUSNOdzQ/exec";
 (function(){
 const YEAR="Year 6";
 const BADGE=["Online Safety Hero", "Online Safety Star", "Online Safety Rookie"];
-const ACTS=[{"id": "fp", "type": "teach", "kind": "Learn", "title": "What is a digital footprint? \ud83d\udc63", "intro": "Everything you do online leaves a footprint.", "html": "<div class=\"trail\"><div><span>\ud83d\udcf8</span>photos you post</div><div><span>\ud83d\udc4d</span>likes</div><div><span>\ud83d\udd0e</span>searches</div><div><span>\ud83c\udfae</span>game chats</div><div><span>\ud83d\udcac</span>comments</div></div>\n  <div class=\"kw\"><small>Key word</small><b>digital footprint</b><span>your trail online \ud83d\udc63</span></div>", "check": {"q": "Can you wipe away every footprint you leave online?", "o": ["Yes, easily", "No, some stay for ever"], "a": 1, "why": "Other people can copy what you post. Those copies can stay for ever."}}, {"id": "match", "type": "match", "kind": "Matching", "title": "Word Match \ud83e\udde9", "intro": "Tap a word, then its meaning.", "pairs": [["Digital footprint", "your trail online \ud83d\udc63"], ["Screenshot", "a saved picture of a screen \ud83d\udcf8"], ["Permanent", "lasts for ever \u267e\ufe0f"], ["Password", "a secret word to log in \ud83d\udd11"], ["MFA", "two locks on your account \ud83d\udd10"]]}, {"id": "tl", "type": "timeline", "kind": "Story", "title": "Sam's Silly Photo \ud83d\udcf8", "intro": "Sam posts a silly photo of a friend. Then Sam deletes it. Is it gone?"}, {"id": "tf", "type": "tf", "kind": "True or false", "title": "Quick-fire! \ud83d\udd25", "intro": "True or false? Build your streak!", "items": [["If I delete my post, every copy is gone.", 0, "Screenshots and shares stay."], ["Anyone can take a screenshot of my post.", 1, "So think before you post."], ["My likes and searches are part of my footprint.", 1, "Everything you do online counts."], ["Disappearing photos can never be saved.", 0, "People can screenshot them."], ["I should ask before posting a photo of a friend.", 1, "It is their footprint too."], ["It's safe to post my school name and home address.", 0, "Keep these private."]]}, {"id": "locks", "type": "teach", "kind": "Learn", "title": "Two locks are better than one \ud83d\udd10", "intro": "Your account is like a door.", "html": "<div class=\"doors\"><div class=\"door\"><div class=\"dl\">\ud83d\udeaa</div><b>One lock \ud83d\udd12</b><p>Just a password. If a robber finds it, they get in.</p></div>\n  <div class=\"door two2\"><div class=\"dl\">\ud83d\udeaa</div><b>Two locks \ud83d\udd12\ud83d\udd12</b><p>Password <b>+</b> a code on your phone. A robber needs <b>both</b>.</p></div></div>\n  <div class=\"kw\"><small>Key word</small><b>MFA</b><span>multi-factor authentication: two (or more) locks on your account</span></div>", "check": {"q": "A robber knows your password. You have two locks. Can they get in?", "o": ["Yes", "No, they need my phone too"], "a": 1, "why": "The second lock is the code on your phone. The robber doesn't have it."}}, {"id": "demo", "type": "lock", "kind": "Live demo", "title": "Stop the Robber! \ud83e\uddb9", "intro": "You are the robber. Can you get into Sam's game account?"}, {"id": "sort", "type": "sort", "kind": "Sorting", "title": "Kinds of Locks \ud83d\uddc2\ufe0f", "intro": "There are three kinds of locks. Sort each one.", "bins": [["know", "\ud83e\udde0 Know", "in your head"], ["have", "\ud83d\udcf1 Have", "in your hand"], ["are", "\ud83d\udc46 Are", "part of you"]], "items": [["password", "know"], ["PIN", "know"], ["phone code", "have"], ["key card", "have"], ["fingerprint", "are"], ["face scan", "are"]], "hint": "Not that box. Head, hand, or body?"}, {"id": "cards", "type": "tf", "kind": "Scenario cards", "title": "Safe or Not Safe? \ud83c\udccf", "intro": "Read each card. Is it safe?", "labels": ["\ud83d\uded1 Not safe", "\ud83d\udc4d Safe"], "items": [["A message says: \"Send me your login code and I'll give you free coins!\"", 1, "Never share your code. Tell a grown-up."], ["You ask your friend before posting a photo of them.", 0, "Great! It's their footprint too."], ["Someone in a game chat asks which school you go to.", 1, "Don't answer. Tell a grown-up and block them."], ["You use a long password made of three random words.", 0, "Long passwords are hard to guess."], ["You tell your best friend your password.", 1, "Passwords are only for you and your grown-ups."], ["You get a login alert you didn't expect, so you tell a grown-up.", 0, "Well done. They can help you lock your account."]]}, {"id": "home", "type": "checklist", "kind": "Home challenge", "title": "Home Challenge \ud83c\udfe0", "intro": "Do this at home with a grown-up. Tick what you did.", "dataLabel": "Home challenge", "items": [["Turn on two locks (MFA) for one account", "Ask a grown-up to help."], ["Make a long password", "Three random words, like purple-tiger-jumps."], ["Check who can see my posts", "Friends only is safest."], ["Search my name with a grown-up", "What can people find?"], ["Talk about what is OK to post", "Make a family rule."]], "side": "<p style='margin:0;font-size:17px'>Show your grown-up this page. \ud83d\ude0a</p>"}];
-
-document.body.classList.toggle('teacher',/teacher/i.test(location.search+location.hash));
-function EXTRA_R(R){
-R.teach=(a,h)=>{const c=a.check;h.innerHTML=a.html+`<div class="tcheck"><p class="big" style="margin-top:14px">🤔 ${esc(c.q)}</p><div class="abcd">${c.o.map((o,j)=>`<button data-j="${j}"><i>${'AB'[j]}</i><span>${esc(o)}</span></button>`).join('')}</div><div class="fbk"></div></div>`;
-  let tries=0;h.querySelectorAll('.abcd button').forEach(b=>b.onclick=()=>{const ok=+b.dataset.j===c.a;tries++;
-    if(!ok){b.classList.add('wrong');b.disabled=true;miss(a,c.q);h.querySelector('.fbk').innerHTML=`<div class="why no">Not quite. Try the other one!</div>`;return}
-    b.classList.add('right');h.querySelectorAll('.abcd button').forEach(x=>x.disabled=true);h.querySelector('.fbk').innerHTML=`<div class="why ok"><b>Yes!</b> ${esc(c.why)}</div>`;award(a,tries===1?3:2)})};
-R.timeline=(a,h)=>{const EV=[["📸","Sam posts a silly photo of Ben.","orig"],["📱","Mia takes a screenshot.","copy"],["💬","Mia sends it to a group chat.","copy"],["🔁","Someone shares it on another app.","copy"],["🗑️","Sam feels bad and deletes the photo.","del"],["😬","Next week, Ben still sees the photo online.","end"]];
-  let k=1;h.innerHTML=`<div class="two"><div><div class="tl"></div><div class="row"><button class="btn tln">Next ▶</button><button class="btn alt sm tlr">Start again</button></div></div>
-   <div><div class="counter"><b class="tlc">0</b><span>copies Sam <b style="font-size:inherit;color:#fff">can't</b> delete</span></div><div class="tlq"></div></div></div>`;
-  const draw=()=>{const tl=h.querySelector('.tl');tl.innerHTML='';let c=0;EV.slice(0,k).forEach(([e,t,kind],i)=>{const d=document.createElement('div');d.className='ev '+kind+(kind==='orig'&&k>4?' gone':'')+(i===k-1?' newest':'');if(kind==='copy')c++;
-      d.innerHTML=`<span style="font-size:26px;margin-right:8px">${e}</span>${esc(t)}`+(kind==='copy'?'<span class="tag c">copy</span>':kind==='orig'?'<span class="tag o">Sam\'s post</span>':'');tl.appendChild(d)});
-    h.querySelector('.tlc').textContent=c;const nb=h.querySelector('.tln');
-    if(k===4){nb.textContent='🗑️ Delete the photo';nb.style.background='var(--bad)'}else{nb.textContent=k>=EV.length?'The end':'Next ▶';nb.style.background=''}nb.disabled=k>=EV.length;
-    if(k>=EV.length){h.querySelector('.tlq').innerHTML=`<div class="card"><p class="big" style="margin:0 0 8px">Sam deleted the photo. Why can Ben still see it?</p><button class="btn alt sm" data-r>Answer</button><div class="reveal">Sam only deleted <b>Sam's</b> post. The screenshot and shares are other people's copies. That's why what we post is <b>permanent</b>. Think before you post! 🤔</div></div>`;
-      const r=h.querySelector('[data-r]');r.onclick=()=>{r.nextElementSibling.classList.add('show');award(a,3,'Think before you post! 🤔')}} else h.querySelector('.tlq').innerHTML=''};
-  h.querySelector('.tln').onclick=()=>{k++;draw()};h.querySelector('.tlr').onclick=()=>{k=1;draw()};draw()};
-R.lock=(a,h)=>{let stage=1,tries=3,code='';const PASS='pizza123';
-  h.innerHTML=`<div class="two" style="grid-template-columns:1.2fr .8fr"><div>
-    <div class="hackcard">🦹 <b>You are the robber.</b> You found Sam's password: <code>${PASS}</code></div>
-    <div class="steps3"><span class="s1 on">1. One lock</span><span class="s2">2. Two locks</span><span class="s3">3. The trick</span></div>
-    <div class="doorbig"><div class="lk l1">🔒<small>Password</small></div><div class="lk l2" style="display:none">🔒<small>Phone code</small></div><div class="dd">🚪</div></div>
-    <div class="lform"></div><div class="result" id="lres_${a.id}"></div></div>
-    <div><div class="phone"><div class="screen"><div class="clock">10:05</div><div class="who">Sam's phone</div><div class="pn"></div>
-      <div class="cover pc"><big>📵</big><b>This is Sam's phone.</b><span>The robber doesn't have it!</span></div></div></div></div></div>`;
-  const res=(c,t)=>{const r=h.querySelector('.result');r.className='result show '+c;r.innerHTML=t};
-  const steps=n=>{['s1','s2','s3'].forEach((x,i)=>h.querySelector('.'+x).classList.toggle('on',i===n-1))};
-  const passForm=()=>{h.querySelector('.lform').innerHTML=`<label class="f" for="lp_${a.id}">Type Sam's password</label><div class="row"><input class="txt" id="lp_${a.id}" autocomplete="off" style="max-width:260px"><button class="btn lgo">Unlock 🔑</button></div>`;
-    h.querySelector('.lgo').onclick=()=>{if(h.querySelector('input').value.trim()!==PASS){res('info','Wrong password. Look at the robber card!');return}
-      const l1=h.querySelector('.l1');l1.innerHTML='🔓<small>Password</small>';l1.classList.add('open');
-      if(stage===1){h.querySelector('.dd').textContent='🚪💨';res('bad','😱 The robber got in! With only <b>one lock</b>, a stolen password is enough.');
-        h.querySelector('.lform').innerHTML=`<button class="btn" style="margin-top:12px">Add a second lock 🔐</button>`;h.querySelector('.lform .btn').onclick=two}
-      else codeForm()}};
-  const two=()=>{stage=2;steps(2);tries=3;h.querySelector('.dd').textContent='🚪';const l1=h.querySelector('.l1');l1.innerHTML='🔒<small>Password</small>';l1.classList.remove('open');h.querySelector('.l2').style.display='';h.querySelector('.result').className='result';
-    res('info','Now Sam has <b>two locks</b>. Try again, robber!');passForm()};
-  const codeForm=()=>{code=String(Math.floor(1000+Math.random()*9000));h.querySelector('.pn').innerHTML=`<div class="note"><b>Game login code</b><div class="code">${code}</div><span style="font-size:14px">Never share this code!</span></div>`;
-    res('info','Lock 1 is open! Now type the 4-digit code from <b>Sam\'s phone</b>.');
-    h.querySelector('.lform').innerHTML=`<label class="f" for="lc_${a.id}">Code from Sam's phone</label><div class="row"><input class="txt" id="lc_${a.id}" inputmode="numeric" maxlength="4" style="max-width:160px;font-family:var(--mono);font-size:26px;letter-spacing:6px"><button class="btn lgo2">Unlock 🔑</button><span class="muted lt">3 tries</span></div>`;
-    h.querySelector('.lgo2').onclick=()=>{const v=h.querySelector('input').value.trim();if(v===code){res('bad','Lucky guess! That almost never happens. Start again and guess again.');return}
-      tries--;h.querySelector('input').value='';if(tries>0){h.querySelector('.lt').textContent=tries+(tries===1?' try':' tries')+' left';res('info','Wrong! The robber can only guess. 🤷');return}
-      res('good','🚫 Locked out! The robber had the password but <b>not the phone</b>. Two locks win!');h.querySelector('.pn').insertAdjacentHTML('afterbegin','<div class="note"><b>Game</b>⚠️ Someone tried to get into your account.</div>');
-      h.querySelector('.lform').innerHTML=`<button class="btn" style="margin-top:12px">Robber's trick 😈</button>`;h.querySelector('.lform .btn').onclick=trick}};
-  const trick=()=>{stage=3;steps(3);h.querySelector('.pc').style.display='none';res('info','Now <b>you are Sam</b>. Look at your phone. What will you do?');
-    h.querySelector('.lform').innerHTML='';const n=document.createElement('div');n.className='note';
-    n.innerHTML=`<b>Message · Game Team 🎁</b>Hi Sam! Send us your login code and we'll give you 1,000 free coins! 😊<div class="row" style="margin-top:8px"><button class="btn sm ms">Send code</button><button class="btn alt sm mn">Don't send. Tell a grown-up</button></div>`;
-    h.querySelector('.pn').prepend(n);
-    n.querySelector('.ms').onclick=()=>{res('bad','😱 Oh no! The robber tricked Sam and got in. <b>Never share your code</b>, even for free coins. Tap Play again to try a different choice.');n.querySelector('.row').innerHTML='<b>You sent the code.</b>';award(a,1,'The robber tricked you! Play again.')};
-    n.querySelector('.mn').onclick=()=>{res('good','🦸 Safe! The robber is stuck. Two locks work as long as you <b>never share your code</b>.');n.querySelector('.row').innerHTML='<b>You told a grown-up. Great choice!</b>';award(a,3,'You stopped the robber! 🦸')}};
-  passForm()};
-}
-setTimeout(()=>{const N={"start": {"min": 3, "goal": "Hook: we all leave footprints online.", "say": "Today: footprints and locks. Play each level; stars save on your device.", "ask": "What did you do online yesterday?"}, "fp": {"min": 5, "goal": "Define digital footprint.", "say": "Everything you do online leaves a footprint. Point to each icon.", "ask": "Which of these did you do this week?"}, "match": {"min": 4, "goal": "Learn the five key words.", "say": "Tap a word, then its meaning. Coloured pairs show matches.", "ask": "What does permanent mean?"}, "tl": {"min": 8, "goal": "Permanence: deleting removes only your own post.", "say": "Project it. Click Next together. Let a pupil press Delete.", "ask": "How many copies did Sam delete?"}, "tf": {"min": 5, "goal": "Check understanding of footprints.", "say": "Quick-fire. Read the reason after each answer.", "ask": "Why should you ask before posting a friend's photo?"}, "locks": {"min": 4, "goal": "MFA as two locks on a door.", "say": "One lock = password. Two locks = password + phone code.", "ask": "Which door would a robber pick?"}, "demo": {"min": 10, "goal": "Live demo: MFA stops a stolen password; never share codes.", "say": "Do it on the projector first: one lock, then two locks, then the robber's trick. Then pupils try.", "ask": "What is the only way the robber gets in with two locks?"}, "sort": {"min": 5, "goal": "Know, have, are.", "say": "MFA uses two different boxes.", "ask": "Is a PIN plus a password two locks? (No: both 'know'.)"}, "cards": {"min": 8, "goal": "Apply it: scenario cards.", "say": "Read each card aloud. Pupils vote with thumbs before tapping.", "ask": "What should you do if a stranger asks for your school?"}, "home": {"min": 4, "goal": "Home account checklist.", "say": "Do this at home with a grown-up. Tick what you did.", "ask": "Which one will you do first?"}, "finish": {"min": 4, "goal": "Recap the three big ideas.", "say": "Read the Remember box together.", "ask": "Exit question: why is a deleted post not really gone?"}};const add=(sec,n)=>{if(!n)return;const d=document.createElement('div');d.className='tnote';d.innerHTML=`<b>Teacher · ${n.min} min</b><span><i>Goal</i> ${esc(n.goal)}</span><span><i>Say</i> ${esc(n.say)}</span><span><i>Ask</i> ${esc(n.ask)}</span>`;sec.prepend(d)};
-  document.querySelectorAll('#screens section').forEach(sec=>add(sec,N[sec.dataset.id||(sec.id==='finish'?'finish':'start')]))},0);
+const ACTS=[{"id": "match", "type": "match", "kind": "Matching", "title": "Word Match \ud83e\udde9", "intro": "Tap a word, then its meaning.", "pairs": [["Digital footprint", "your trail online \ud83d\udc63"], ["Screenshot", "a saved picture of a screen \ud83d\udcf8"], ["Permanent", "lasts for ever \u267e\ufe0f"], ["Password", "a secret word to log in \ud83d\udd11"], ["MFA", "two locks on your account \ud83d\udd10"]]}, {"id": "story", "type": "order", "kind": "Put in order", "title": "Sam's Photo Story \ud83d\udcf8", "intro": "Remember Sam's silly photo? Put the story in order.", "how": "Tap the events in order.", "steps": ["\ud83d\udcf8 Sam posts a silly photo of Ben.", "\ud83d\udcf1 Mia takes a screenshot.", "\ud83d\udcac Mia sends it to a group chat.", "\ud83d\uddd1\ufe0f Sam deletes the photo.", "\ud83d\ude2c Ben still sees the photo next week."], "after": "Sam deleted <b>Sam's</b> post, but the copies stayed. Think before you post! \ud83e\udd14"}, {"id": "tf", "type": "tf", "kind": "True or false", "title": "Quick-fire! \ud83d\udd25", "intro": "True or false? Build your streak!", "items": [["Deleting my post deletes every copy.", 0, "Screenshots and shares stay."], ["Anyone can screenshot my post.", 1, "So think before you post."], ["My searches are part of my footprint.", 1, "Everything you do online counts."], ["Two locks are safer than one.", 1, "A robber needs both."], ["It's fine to share my login code with a friend.", 0, "Never share your code with anyone."], ["I should ask before posting a friend's photo.", 1, "It's their footprint too."], ["A long password is harder to guess.", 1, "Every extra letter helps."], ["Strangers in a game chat should know my school.", 0, "Keep it private."]]}, {"id": "odd", "type": "odd", "kind": "Odd one out", "title": "Odd One Out \ud83d\udd75\ufe0f", "intro": "Which one doesn't belong?", "sets": [{"items": ["password", "PIN", "fingerprint", "secret word"], "odd": 2, "why": "Fingerprint is part of you. The rest are in your head."}, {"items": ["photos", "likes", "searches", "sunshine \u2600\ufe0f"], "odd": 3, "why": "Sunshine isn't online! The rest are footprints."}, {"items": ["phone code", "key card", "face scan", "security key"], "odd": 2, "why": "Face scan is part of you. The rest you hold."}, {"items": ["ask a grown-up", "block a stranger", "tell a teacher", "share your password"], "odd": 3, "why": "Never share your password. The rest keep you safe."}]}, {"id": "sort", "type": "sort", "kind": "Sorting", "title": "Kinds of Locks \ud83d\uddc2\ufe0f", "intro": "Sort each lock into its box.", "bins": [["know", "\ud83e\udde0 Know", "in your head"], ["have", "\ud83d\udcf1 Have", "in your hand"], ["are", "\ud83d\udc46 Are", "part of you"]], "items": [["password", "know"], ["PIN", "know"], ["phone code", "have"], ["key card", "have"], ["fingerprint", "are"], ["face scan", "are"]], "hint": "Not that box. Head, hand, or body?"}, {"id": "gap", "type": "gap", "kind": "Fill the gap", "title": "Fill It In \u270f\ufe0f", "intro": "Tap the right word.", "items": [["Everything I do online leaves a ___.", ["footprint", "shadow"], "footprint"], ["Deleting my post doesn't delete the ___.", ["copies", "internet"], "copies"], ["MFA means two ___ on my account.", ["locks", "games"], "locks"], ["Never share your login ___.", ["code", "joke"], "code"]]}, {"id": "pw", "type": "quiz", "kind": "A or B", "title": "Password Battle \u2694\ufe0f", "intro": "Which password is harder to guess?", "qs": [{"q": "Which is stronger?", "o": ["cat", "purple-tiger-jumps"], "a": 1, "why": "Longer is stronger!"}, {"q": "Which is stronger?", "o": ["123456", "pizza-moon-rocket-7"], "a": 1, "why": "123456 is one of the most used passwords."}, {"q": "Which is stronger?", "o": ["my name", "three random words"], "a": 1, "why": "Your name is easy to guess."}, {"q": "Who can know your password?", "o": ["Only you and your grown-ups", "Your best friend", "Anyone who asks", "Your whole class"], "a": 0, "why": "Keep it secret, keep it safe."}]}, {"id": "cards", "type": "tf", "kind": "Scenario cards", "title": "Safe or Not Safe? \ud83c\udccf", "intro": "Read each card. Is it safe?", "labels": ["\ud83d\uded1 Not safe", "\ud83d\udc4d Safe"], "items": [["A pop-up says: \"Type your password to win a prize!\"", 1, "Close it. Prizes don't need passwords."], ["You set a long password with a grown-up.", 0, "Great job!"], ["A friend asks for your game login code.", 1, "Never share codes, even with friends."], ["You keep your account private, friends only.", 0, "Nice! Fewer people see your posts."], ["Someone you don't know sends a link: \"Is this you?? \ud83d\ude02\"", 1, "Don't click. Tell a grown-up."], ["You think before posting a funny photo of your friend.", 0, "Smart! Ask them first."]]}, {"id": "ask", "type": "mission", "kind": "Bonus mission", "title": "Interview a Grown-up \ud83c\udfa4", "intro": "Ask a grown-up at home these questions. Write their answers.", "html": "<ol class='steps'><li>Find a grown-up at home.</li><li>Ask: <b>Do you use two locks (MFA) on any account?</b></li><li>Ask: <b>Which app or account?</b></li><li>Make one family rule about posting together.</li></ol>", "fields": [["aUse", "Interview: grown-up uses MFA?", ["Yes", "No", "Not sure"]], ["aApp", "Interview: which app or account", null], ["aRule", "Interview: our family rule about posting", null]]}];
 
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -684,7 +608,7 @@ $('#lastSent').textContent=store.get('sentAt','')?'Last sent: '+store.get('sentA
 const secs=$$('#screens section');let cur=Math.min(store.get('cur',0),secs.length-1);
 secs.forEach((s,i)=>{const d=document.createElement('button');d.textContent=i===0?'▶':i===secs.length-1?'🏅':i;d.onclick=()=>go(i);$('#dots').appendChild(d)});
 function go(i){cur=Math.max(0,Math.min(secs.length-1,i));secs.forEach((s,k)=>s.classList.toggle('on',k===cur));
-  $$('#dots button').forEach((b,k)=>b.classList.toggle('on',k===cur));$('#partName').textContent=YEAR+' · '+secs[cur].dataset.part;
+  $$('#dots button').forEach((b,k)=>b.classList.toggle('on',k===cur));$('#partName').textContent=YEAR+' homework · '+secs[cur].dataset.part;
   $('#prog').style.width=(cur/(secs.length-1)*100)+'%';$('#lvl').textContent=cur===0?'Start':cur===secs.length-1?'Badge':'Level '+cur+' / '+(secs.length-2);$('#prev').disabled=cur===0;$('#next').disabled=cur===secs.length-1;
   if(cur===secs.length-1){badge();$('#prevTable').innerHTML=collect().map(([k,v])=>`<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`).join('')}
   window.scrollTo({top:0});store.set('cur',cur)}
